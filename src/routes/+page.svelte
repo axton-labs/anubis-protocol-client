@@ -82,10 +82,10 @@
       </header>
 
       <!-- Hero Content -->
-      <section class="container mx-auto px-4 pt-50 md:pt-56 h-screen">
+      <section class="container mx-auto px-4 pt-46 md:pt-56 h-screen">
         <div class="max-w-2xl mx-auto text-center">
           <div
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background/60 backdrop-blur-md border border-border/50 mb-8"
+            class="md:inline-flex hidden items-center gap-2 px-4 py-2 rounded-full bg-background/60 backdrop-blur-md border border-border/50 mb-8"
           >
             <div class="w-2 h-2 rounded-full bg-accent animate-pulse"></div>
             <span class="text-sm text-foreground/90"
