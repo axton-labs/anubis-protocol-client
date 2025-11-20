@@ -42,7 +42,7 @@
     <!-- Content -->
     <div class="relative z-10">
       <!-- Hero Header -->
-      <header class="fixed top-0 left-0 right-0 z-50">
+      <header class="fixed top-4 left-0 right-0 z-50">
         <nav
           class="container mx-auto px-4 py-4 flex items-center justify-between rounded-lg border-b border-border/50 backdrop-blur-md bg-background/30"
         >
@@ -56,7 +56,7 @@
                 class="w-full h-full object-contain"
               />
             </div>
-            <span class="text-xl font-bold text-foreground font-kode"
+            <span class="text-lg md:text-xl font-bold text-foreground font-kode"
               >Anubis Protocol</span
             >
           </a>
@@ -77,7 +77,7 @@
               >Security</a
             >
           </div>
-          <Button variant="accent" size="lg">Get Started</Button>
+          <Button variant="accent" size="lg">Enter App</Button>
         </nav>
       </header>
 
