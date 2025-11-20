@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { Button } from "$lib/components/ui/button";
-  import { Card } from "$lib/components/ui/card";
-  import { LiquidChrome, Balatro } from "$lib/components";
+  import { Button } from "../components/ui/button";
+  import { Card } from "../components/ui/card";
+  import { LiquidChrome, Balatro } from "../components";
   import {
     Clock,
     Lock,
