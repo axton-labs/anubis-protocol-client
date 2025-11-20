@@ -72,6 +72,30 @@
     @apply bg-background text-foreground;
     font-family: 'Open Sans', -apple-system, sans-serif;
   }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+  
+    ::-webkit-scrollbar-track {
+      background: hsl(0 0% 8%);
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background: var(--accent);
+      border-radius: 5px;
+    }
+  
+    ::-webkit-scrollbar-thumb:hover {
+      background: oklch(from var(--accent) calc(l * 0.85) c h);
+    }
+  
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent) hsl(0 0% 8%);
+    }
 }
 
 @layer utilities {
