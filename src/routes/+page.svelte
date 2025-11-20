@@ -106,7 +106,7 @@
             cryptocurrency.
           </p>
 
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button size="lg" variant="accent">
               Create Your DeWill
               <ChevronRight class="ml-2 w-5 h-5" />
@@ -118,6 +118,30 @@
             >
               Learn More
             </Button>
+          </div>
+
+          <!-- Backed by Section -->
+          <div class="flex items-center justify-center gap-3">
+            <div
+              class="flex items-center gap-2 px-4 py-3 rounded-xl bg-background/50 backdrop-blur-md border border-border/30"
+            >
+              <span class="text-sm text-muted-foreground">Backed by</span>
+              <a
+                href="https://axton.wtf"
+                target="_blank"
+                class="flex items-center gap-2 hover:scale-105 transition-transform"
+              >
+                <img
+                  src="/axton-logo.png"
+                  alt="Axton Labs"
+                  class="w-6 h-6 object-contain"
+                />
+                <span
+                  class="text-base font-semibold text-foreground font-azonix"
+                  >Axton Labs</span
+                >
+              </a>
+            </div>
           </div>
         </div>
       </section>
