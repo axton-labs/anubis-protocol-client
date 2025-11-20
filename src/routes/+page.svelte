@@ -44,7 +44,7 @@
       <!-- Hero Header -->
       <header class="fixed top-4 left-0 right-0 z-50">
         <nav
-          class="container mx-auto px-4 py-4 flex items-center justify-between rounded-lg border-b border-border/50 backdrop-blur-md bg-background/30"
+          class="container mx-auto px-6 py-4 flex items-center justify-between rounded-xl border-b border-border/50 backdrop-blur-md bg-background/30"
         >
           <a href="/" class="flex items-center gap-2">
             <div
@@ -77,7 +77,7 @@
               >Security</a
             >
           </div>
-          <Button variant="accent" size="lg">Enter App</Button>
+          <Button variant="accent" size="lg">Enter dApp</Button>
         </nav>
       </header>
 
@@ -148,7 +148,7 @@
     </div>
     <!-- Stats -->
     <section
-      class="border-y border-border bg-secondary/30 absolute bottom-0 left-0 right-0"
+      class="border-y border-border  backdrop-blur-lg absolute bottom-0 left-0 right-0"
     >
       <div class="container mx-auto px-4 py-12">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
