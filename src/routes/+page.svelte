@@ -57,7 +57,7 @@
               />
             </div>
             <span class="text-lg md:text-xl font-bold text-foreground font-kode"
-              >Anubis Protocol</span
+              >Anubis</span
             >
           </a>
           <div class="hidden md:flex items-center gap-8">
@@ -82,7 +82,7 @@
       </header>
 
       <!-- Hero Content -->
-      <section class="container mx-auto px-4 pt-46 md:pt-56 h-screen">
+      <section class="container mx-auto px-4 pt-56 h-screen">
         <div class="max-w-2xl mx-auto text-center">
           <div
             class="md:inline-flex hidden items-center gap-2 px-4 py-2 rounded-full bg-background/60 backdrop-blur-md border border-border/50 mb-8"
@@ -113,8 +113,7 @@
             </Button>
             <Button
               size="lg"
-              variant="secondary"
-              class="border-border/50 backdrop-blur-md bg-background/40 text-foreground hover:bg-background/60 text-base px-8"
+              variant="ghost"
             >
               Learn More
             </Button>
