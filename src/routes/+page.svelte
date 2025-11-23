@@ -11,6 +11,7 @@
     AlertTriangle,
     Heart,
   } from "lucide-svelte";
+  import { animateOnMount, animateOnScroll } from "$lib/animations";
 </script>
 
 <div class="min-h-screen bg-background">
@@ -83,7 +84,10 @@
 
       <!-- Hero Content -->
       <section class="container mx-auto px-4 pt-56 h-screen">
-        <div class="max-w-2xl mx-auto text-center">
+        <div
+          class="max-w-2xl mx-auto text-center"
+          use:animateOnMount={{ delay: 0.2, stagger: 0.15 }}
+        >
           <div
             class="md:inline-flex hidden items-center gap-2 px-4 py-2 rounded-full bg-background/60 backdrop-blur-md border border-border/50 mb-8"
           >
@@ -111,12 +115,7 @@
               Create Your DeWill
               <ChevronRight class="ml-2 w-5 h-5" />
             </Button>
-            <Button
-              size="lg"
-              variant="ghost"
-            >
-              Learn More
-            </Button>
+            <Button size="lg" variant="ghost">Learn More</Button>
           </div>
 
           <!-- Backed by Section -->
@@ -147,10 +146,13 @@
     </div>
     <!-- Stats -->
     <section
-      class="border-y border-border  backdrop-blur-lg absolute bottom-0 left-0 right-0"
+      class="border-y border-border backdrop-blur-lg absolute bottom-0 left-0 right-0"
     >
       <div class="container mx-auto px-4 py-12">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-8"
+          use:animateOnScroll={{ stagger: 0.1 }}
+        >
           <div class="text-center">
             <div class="text-3xl md:text-4xl font-bold text-accent mb-2">
               $25K
@@ -184,7 +186,7 @@
 
   <!-- Why DeWill -->
   <section class="container mx-auto px-4 py-20 md:py-32">
-    <div class="text-center mb-16">
+    <div class="text-center mb-16" use:animateOnScroll={{ stagger: 0.15 }}>
       <h2
         class="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance"
       >
@@ -196,7 +198,10 @@
       </p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div
+      class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+      use:animateOnScroll={{ stagger: 0.15 }}
+    >
       <Card class="p-8 bg-card border-border">
         <div
           class="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-6"
@@ -304,7 +309,7 @@
     class="bg-secondary/30 border-y border-border py-20 md:py-32"
   >
     <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
+      <div class="text-center mb-16" use:animateOnScroll={{ stagger: 0.15 }}>
         <h2
           class="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance"
         >
@@ -316,7 +321,10 @@
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        use:animateOnScroll={{ stagger: 0.1 }}
+      >
         <Card
           class="p-8 bg-card border-border hover:border-accent/50 transition-colors"
         >
@@ -440,7 +448,7 @@
 
   <!-- How It Works -->
   <section id="how-it-works" class="container mx-auto px-4 py-20 md:py-32">
-    <div class="text-center mb-16">
+    <div class="text-center mb-16" use:animateOnScroll={{ stagger: 0.15 }}>
       <h2
         class="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance"
       >
@@ -451,7 +459,10 @@
       </p>
     </div>
 
-    <div class="max-w-4xl mx-auto space-y-8">
+    <div
+      class="max-w-4xl mx-auto space-y-8"
+      use:animateOnScroll={{ stagger: 0.15 }}
+    >
       <div class="flex gap-6 items-start">
         <div
           class="shrink-0 w-12 h-12 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-bold"
@@ -530,7 +541,10 @@
   >
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div
+          class="grid md:grid-cols-2 gap-12 items-center"
+          use:animateOnScroll={{ stagger: 0.2 }}
+        >
           <div>
             <h2
               class="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance leading-tight"
@@ -659,7 +673,10 @@
 
     <!-- Content -->
     <div class="relative z-10 py-20 md:py-32">
-      <div class="container mx-auto px-4 text-center">
+      <div
+        class="container mx-auto px-4 text-center"
+        use:animateOnScroll={{ stagger: 0.15 }}
+      >
         <h2
           class="text-3xl md:text-5xl font-bold mb-6 text-balance text-foreground drop-shadow-lg"
         >
@@ -684,7 +701,10 @@
 
   <!-- Footer -->
   <footer class="border-t border-border bg-background">
-    <div class="container mx-auto px-4 py-12">
+    <div
+      class="container mx-auto px-4 py-12"
+      use:animateOnScroll={{ stagger: 0 }}
+    >
       <div class="grid md:grid-cols-4 gap-8 mb-8">
         <div>
           <div class="flex items-center gap-2 mb-4">
